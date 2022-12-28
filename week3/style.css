@@ -3,11 +3,6 @@ body {
 }
 
 h1 {
-  color: white;
-  text-align: center;
-}
-
-p {
-  text-align: center;
-  color: red;
+  color: navy;
+  margin-left: 20px;
 }
