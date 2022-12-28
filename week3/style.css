@@ -8,3 +8,7 @@ h1 {
 p {
   background-color: yellow;
 }
+
+p.dotted {
+border-style: dotted;
+}
