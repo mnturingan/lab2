@@ -39,3 +39,10 @@ header {
     display: inline-block;
     padding: 0px 20px;
 }
+
+.pfp {
+    display: block;
+    padding: 20px;
+    height: 50vh;
+    margin: auto;
+}
