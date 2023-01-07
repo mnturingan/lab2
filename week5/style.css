@@ -46,3 +46,15 @@ header {
     height: 50vh;
     margin: auto;
 }
+
+.container {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    text-justify: inter-word;
+    padding: 5vh 0vh 5vh 0vh;
+}
+
+#home {
+    background-color: #D8B4A0;
+}
