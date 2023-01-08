@@ -41,19 +41,3 @@ header {
     display: inline-block;
     padding: 0px 20px;
 }
-.main-bg {
-    object-fit: cover;
-    width: 100%;
-    max-height: 450px;
-}
-
-.billboard {
-    position: absolute;
-    width: 30rem;
-    background-color: #D3DBC2;
-    padding: 2.4rem;
-    left: 10rem;
-    top: 10rem;
-    font-size: 40px;
-    border-radius: 15px;
-}
