@@ -8,6 +8,12 @@
 .grid-col-span2 {
     grid-column: span 2;
 }
+
+.reso{
+    max-width: 50vh;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 1024px) {
 	.img-grid {
 		--num-cols: 2;
