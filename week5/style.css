@@ -59,3 +59,13 @@ header {
     background-color: #D8B4A0;
 }
 
+.img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.imgal {
+    height: 30vh;
+    width: 30vh;
+}
+
