@@ -1,74 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Page</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+        
+    <!--Custom Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-        <!--Custom CSS-->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/style2.css">
-        <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/8297c50d72.js" crossorigin="anonymous"></script>
 
-        <!--Fontawesome-->
-        <script src="https://kit.fontawesome.com/8297c50d72.js" crossorigin="anonymous"></script>
-    </head>
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
 
-    <body>
-        <!--navbars-->
-        <header class="header" id=""navbar>
-            <a href="#" class="logo">mnturingan</a>
-            <nav>
-                <ul class="nav-bar">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!--home-->
-        <section>
-        <div class="billboard">
-            <h1>Hi, I'm Mark.</h1> 
-            <p><i>“Never give up. When your heart becomes tired, just walk with your legs but move on.”</i> -<b>Paulo Coelho</b></p> 
-        </div>
-        <img class="main-bg" src="images/sunrise.jpg" alt="starry night">
-        </section>
-        <!--about-->
-        <section id="about">
-            <div class="container">
-                <h1><i class="fa-solid fa-user"></i> About me</h1>
-                <br>
-                <p>Howdy, my name is Mark. I graduated Senior High School at Asia Pacific College and continuing my college
-                life there too. I am a scholar (60%). </p>
-                <br>
-                <p>There's nothing much about me. Introverted. I play games occasionally. I also play chess and
-                do road cycling. I like watching movies. </p>
-                <br>
-                <p>During my free time, I go to my friend's
-                    house or drive a motorcyle with them. My favorite food is sisig. I am not picky in food but the food I don't really
-                    like is beans. I listen to Korean Pop Music and my favorite K-pop group is 
-                    <a href="https://youtu.be/POe9SOEKotk" target="_blank" style="text-decoration: underline;">BLACKPINK</a>.</p>
-            </div>
-        </section>
-
-        <!--gallery-->
-        <section id="gallery">
-            <div class="container">
-                <h1><i class="fa-solid fa-image"></i> Gallery</h1>
-                <br>
-                <div class="img-grid">
-                    <img class="imgal grid-col-span2" src="images/me2.png" alt="me1">
-                    <img class="imgal" src="images/me1.png" alt="me2">
-                    <img class="imgal" src="images/me4.png" alt="me3">
-                    <img class="imgal grid-col-span2" src="images/me3.png" alt="me4">
+<body>
+    <div class="wrapper">
+            <header>
+                <b>MNTURINGAN</b>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="left-col">
+                    <h1>Hi, I'm Mark and this is my personal page.</h1>
+                    <p>A simple page about my (un)interesting life.</p>
+                    <div class="cta-btns">
+                        <a href="about.html" class="primary-cta">
+                            <i class="fa-solid fa-arrow-right"></i> 
+                            <span>Let's Go</span> 
+                        </a>
+                        <a href="https://github.com/mnturingan/lab2" target="_blank" class="secondary-cta">
+                            <i class="fa-brands fa-github"></i> 
+                            <span>View Repository</span> 
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!--Custom JS-->
-        <script src=""></script>
-    </body>
+                <div class="right-col">
+                    <img id="stud-img" src="images/student.png" alt="Student Illustration">
+                </div>
+            </main>
+    </div>
+    <!--Custom JS-->
+    <script src="js/app.js"></script>
+</body>
 </html>

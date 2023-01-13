@@ -1,46 +1,82 @@
-* {
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    background-color: #C6DBC2;
-    margin: 0px;
-}
-li, a {
-    font-weight: 500;
-    font-size: 15px;
-    color: #000000;
-    text-decoration: none;
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
-p {
-    font-size: 16px;
+body {
+    margin: 0;
+    background: linear-gradient(90deg, #9bf8f3 0%, #6e79f7);
 }
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+/*Navbar*/
+
 header {
-    width: 100%;
-    z-index: 9999;
     display: flex;
     justify-content: space-between;
-    padding: 10px 10%;
     align-items: center;
-    position: fixed;
 }
 
-.logo {
-    font-weight: 700;
-    font-size: 26px;
-    color: #000000;
+nav {
+    margin: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4em;
+}
+
+nav ul li a{
     text-decoration: none;
+    color: black;
+    text-transform: uppercase;
 }
 
-.nav-bar {
-    list-style: none;
-    padding: 0px;
+/*section main*/
+
+main {
+    display: flex;
+    gap: 8em;   
+    margin-top: 100px;
 }
 
-.nav-bar li{
-    display: inline-block;
-    padding: 0px 20px;
+.left-col {
+    font-size: 18px;
+    width: 45%;
+    margin: auto; 
+
+}
+
+#stud-img {
+    height: 400px;
+    border-radius: 10px;
+}
+
+.cta-btns, .secondary-cta {
+    display: flex;
+    gap: 2em;
+}
+
+.primary-cta {
+    background-color: #6e7af7;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 30px;
+}
+
+.secondary-cta {
+    background-color: #9bf8f3;
+    text-decoration: none;
+    color: black;
+    display: block;
+    border-radius: 5px;
+    padding: 8px 30px;
 }
