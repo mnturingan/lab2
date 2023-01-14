@@ -57,8 +57,7 @@ img{
 }
 p{
     display: flex;
-        align-items: center;
-        justify-content: center;
+    justify-content: center;
 }
 .secondary-cta {
     background-color: #9bf8f3;
@@ -73,5 +72,4 @@ p{
     justify-content: right;
     align-items: center;
 }
-
 
