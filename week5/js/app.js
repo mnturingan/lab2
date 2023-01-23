@@ -1,13 +1,17 @@
-//Greeting
-
-let container = document.querySelector(".greet-js");
-let timeNow = new Date().getHours();
-let greeting =
-  timeNow >= 5 && timeNow < 12
-    ? "Good Morning"
-    : timeNow >= 12 && timeNow < 18
-    ? "Good Afternoon"
-    : "Good evening";
-container.innerHTML = `${greeting}`;
-
 //User Input (Name)
+
+//Checkbox
+
+document.getElementById("myButton").onclick = function () {
+  const aloneBtn = document.getElementById("aloneBtn");
+  const dateBtn = document.getElementById("dateBtn");
+  const codeBtn = document.getElementById("codeBtn");
+
+  if (aloneBtn.checked) {
+    document.getElementById("myLabel").innerHTML = "Wow that sucks but same";
+  } else if (dateBtn.checked) {
+    document.getElementById("myLabel").innerHTML = "Edi sanaol";
+  } else {
+    document.getElementById("myLabel").innerHTML = "You can do better";
+  }
+};

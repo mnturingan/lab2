@@ -98,3 +98,7 @@ footer {
     align-items: center;
 }
 
+#myLabel {
+    color: midnightblue;
+    font-weight: bold;
+}
