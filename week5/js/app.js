@@ -1,5 +1,3 @@
-//User Input (Name)
-
 //Checkbox
 
 document.getElementById("myButton").onclick = function () {
