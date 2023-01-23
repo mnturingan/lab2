@@ -1,3 +1,5 @@
+//Greeting
+
 let container = document.querySelector(".greet-js");
 let timeNow = new Date().getHours();
 let greeting =
@@ -7,3 +9,5 @@ let greeting =
     ? "Good Afternoon"
     : "Good evening";
 container.innerHTML = `${greeting}`;
+
+//User Input (Name)
