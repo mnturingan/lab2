@@ -26,13 +26,12 @@
 <body>
     <div class="wrapper">
             <header>
-                <b>MNTURINGAN</b>
+                <b><a href="index.php">mnturingan</a></b>
                 <nav>
                     <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="home.php">Home</a></li>
+                        <li><a href="about.php">About Me</a></li>
+                        <li><a href="resources.php">Resources</a></li>
                     </ul>
                 </nav>
             </header>
@@ -46,24 +45,25 @@
                             <span>Let's Go</span> 
                         </a>
                         <a href="https://github.com/mnturingan/lab2" target="_blank" class="secondary-cta">
-                            <i class="fa-brands fa-github"></i> 
-                            <span>View Repository</span> 
+                            <i class="fa-solid fa-hand-fist"></i>
+                            <span>Be my friend</span> 
                         </a>
                     </div>
                 </div>
                 <div class="right-col">
                     <img id="stud-img" src="images/student.png" alt="Student Illustration">
                 </div>
+                
             </main>
+            
     </div>
-    <footer>
-        <div class="footer-ctn">
-            <p><b>Personal Page 2023</b></p>
-            <p>http://apcwebprog.csf.ph/</p>
-            <p>@2023 by Mark, WEBPROG. THis is a dummy (not for profit) website and is intended for educational and informational purposes only.</p>
-        </div>
-    </footer>
-    <!--Custom JS-->
-    <script src="js/app.js"></script>
+    <div class="popup">
+                <div class="popup-content">
+                    
+                </div>
+            </div>
+    
+    
+    <script src=""></script>
 </body>
 </html>

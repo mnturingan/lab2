@@ -15,11 +15,11 @@ body {
 }
 
 /*Navbar*/
-
-header {
+header a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   text-decoration: none;
 }
 
 nav {
@@ -82,7 +82,8 @@ main {
     padding: 8px 30px;
 }
 
-footer {
+
+/* footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -96,9 +97,4 @@ footer {
     margin: auto;
     padding: 0 20px;
     align-items: center;
-}
-
-#myLabel {
-    color: midnightblue;
-    font-weight: bold;
-}
+} */

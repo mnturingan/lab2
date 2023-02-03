@@ -25,18 +25,19 @@
 
     <!--Custom CSS-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
   </head>
 
   <body>
     <div class="wrapper">
       <header>
-        <b>MNTURINGAN</b>
+        <b><a href="index.php">mnturingan</a></b>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.php">Home</a></li>
             <li><a href="#" class="active">About Me</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="resources.html">Resources</a></li>
+            <li><a href="resources.php">Resources</a></li>
           </ul>
         </nav>
       </header>
@@ -89,7 +90,8 @@
         </div>
       </main>
     </div>
-    <!--Custom JS-->
-    <script src="js/app.js"></script>
+
+    
+    <script src=""></script>
   </body>
 </html>

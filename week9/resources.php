@@ -16,20 +16,21 @@
 
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/8297c50d72.js" crossorigin="anonymous"></script>
-
+    
+    
     <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
     <link rel="stylesheet" type="text/css" href="css/style3.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <b>MNTURINGAN</b>
+        <b><a href="index.php">mnturingan</a></b>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="about.php">About Me</a></li>
                     <li><a href="#" class="active">Resources</a></li>
                 </ul>
             </nav>
@@ -73,7 +74,7 @@
             </a>
         </main>
     </div>
-    <!--Custom JS-->
-    <script src=""></script>
+
+    
 </body>
 </html>
