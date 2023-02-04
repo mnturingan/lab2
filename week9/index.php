@@ -21,49 +21,42 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style2.css">
     
+    
 </head>
 
 <body>
     <div class="wrapper">
-            <header>
-                <b><a href="index.php">mnturingan</a></b>
-                <nav>
-                    <ul>
-                        <li><a href="home.php">Home</a></li>
-                        <li><a href="about.php">About Me</a></li>
-                        <li><a href="resources.php">Resources</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <div class="left-col">
-                    <h1>Hi, I'm Mark and this is my personal page.</h1>
-                    <p>A simple page about my (un)interesting life.</p>
-                    <div class="cta-btns">
-                        <a href="about.html" class="primary-cta">
-                            <i class="fa-solid fa-arrow-right"></i> 
-                            <span>Let's Go</span> 
-                        </a>
-                        <a href="https://github.com/mnturingan/lab2" target="_blank" class="secondary-cta">
-                            <i class="fa-solid fa-hand-fist"></i>
-                            <span>Be my friend</span> 
-                        </a>
-                    </div>
-                </div>
-                <div class="right-col">
-                    <img id="stud-img" src="images/student.png" alt="Student Illustration">
-                </div>
-                
-            </main>
+        <header>
+            <b><a href="index.php">mnturingan</a></b>
+            <nav>
+                <ul>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="about.php">About Me</a></li>
+                    <li><a href="resources.php">Resources</a></li>
+                </ul>
+            </nav>
+        </header>
             
-    </div>
-    <div class="popup">
-                <div class="popup-content">
-                    
+        <main>
+            <div class="left-col">
+                <h1>Hi, I'm Mark and this is my personal page.</h1>
+                <p>Looking for alliances.</p>
+                <div class="cta-btns">
+                    <a href="register.php" class="primary-cta">
+                    <i class="fa-solid fa-hand-fist"></i> 
+                        <span>Join Alliance</span> 
+                    </a>
+                    <!-- <a href="" target="_blank" class="secondary-cta" id="button">
+                        <i class="fa-solid fa-hand-fist"></i>
+                        <span>Login</span> 
+                    </a> -->
                 </div>
             </div>
-    
-    
-    <script src=""></script>
+            <div class="right-col">
+                <img id="stud-img" src="images/student.png" alt="Student Illustration">
+            </div>
+        </main>
+    </div>
+
 </body>
 </html>

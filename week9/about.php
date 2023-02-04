@@ -75,20 +75,6 @@
           </p>
         </div>
       </main>
-      <main>
-        <div>
-          <h3>By the way, what y'all doing on Valentine's Day?</h3>
-          <input type="radio" id="aloneBtn" name="unit" />
-          <label for="alone">Alone at home</label>
-          <input type="radio" id="dateBtn" name="unit" />
-          <label for="date">I have a date</label>
-          <input type="radio" id="codeBtn" name="unit" />
-          <label for="code">Write codes</label>
-          <br />
-          <button id="myButton">Submit</button>
-          <label id="myLabel"></label>
-        </div>
-      </main>
     </div>
 
     
