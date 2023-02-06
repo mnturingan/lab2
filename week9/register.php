@@ -39,8 +39,8 @@
       <main>
       <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
+$nameErr = $lastnameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $lastname = $email = $gender = $comment = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -50,6 +50,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // check if name only contains letters and whitespace
     if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
       $nameErr = "Only letters and white space allowed";
+    }
+  }
+
+  if (empty($_POST["lastname"])) {
+    $lastnameErr = "Last Name is required";
+  } else {
+    $lastname = test_input($_POST["lastname"]);
+    // check if lastname only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$lastname)) {
+      $lastnameErr = "Only letters and white space allowed";
     }
   }
   
@@ -67,10 +77,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $website = "";
   } else {
     $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid
+    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
     if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
       $websiteErr = "Invalid URL";
-    }    
+    }
   }
 
   if (empty($_POST["comment"])) {
@@ -97,21 +107,24 @@ function test_input($data) {
 <h2>Join Mark's Alliance</h2>
 <p><span class="error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name">
+  Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
-  E-mail: <input type="text" name="email">
+  Last Name: <input type="text" name="lastname" value="<?php echo $lastname;?>">
+  <span class="error">* <?php echo $lastnameErr;?></span>
+  <br><br>
+  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
-  Website: <input type="text" name="website">
+  Website: <input type="text" name="website" value="<?php echo $website;?>">
   <span class="error"><?php echo $websiteErr;?></span>
   <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
   <br><br>
   Gender:
-  <input type="radio" name="gender" value="female">Female
-  <input type="radio" name="gender" value="male">Male
-  <input type="radio" name="gender" value="other">Other
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
@@ -121,6 +134,8 @@ function test_input($data) {
 echo "<h2>Your Input:</h2>";
 echo $name;
 echo "<br>";
+echo $lastname;
+echo "<br>";
 echo $email;
 echo "<br>";
 echo $website;
@@ -128,8 +143,43 @@ echo "<br>";
 echo $comment;
 echo "<br>";
 echo $gender;
+echo "<br>";
 ?>
-    
+
+
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "testdb";
+	
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+	}
+	
+	$sql = "INSERT INTO MyAllies (firstname, lastname, email)
+	VALUES ('$name', '$lastname', '$email')";
+	
+	if ($conn->query($sql) === TRUE) {
+	echo "You just joined the alliance. There is no going back. Hehe";
+	} else {
+	echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+	
+	$conn->close();
+}
+?>
+      </main>
+  </div>
+
+
     <script src=""></script>
 </body>
 </html>

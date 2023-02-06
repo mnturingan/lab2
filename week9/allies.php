@@ -1,10 +1,3 @@
-<?php if(!isset($_SESSION['user'])) // The exact conditional depends on your login-system implementation
-{
-    header('Location: register.php'); // Instructs the visitor's browser to redirect
-    exit; // <-- What you want. Prevents further code from being executed, works as a security measure.
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,9 +18,9 @@
     <script src="https://kit.fontawesome.com/8297c50d72.js" crossorigin="anonymous"></script>
 
     <!--Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <link rel="stylesheet" type="text/css" href="css/style2.css">
-    <link rel="stylesheet" type="text/css" href="css/style3.css">
+
     
 </head>
 
@@ -37,7 +30,6 @@
         <b><a href="index.php">mnturingan</a></b>
           <nav>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
                   <li><a href="about.php">About Me</a></li>
                   <li><a href="resources.php">Resources</a></li>
             </ul>
@@ -45,11 +37,44 @@
       </header>
             
       <main>
+
+      <!-- select data mysql testdb -->
+            <?php
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "testdb";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "SELECT id, firstname, lastname FROM MyAllies";
+        $result = $conn->query($sql);
+
+        echo "<h1>My Allies</h1>";
+        if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            
+            echo "<br>";
+            echo "id: " . $row["id"]. " - " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+        }
+        } else {
+        echo "0 results";
+        }
+        $conn->close();
+        ?>
+
         
       </main>
-    </div>
- 
     
+  </div>
+
+
     <script src=""></script>
 </body>
 </html>

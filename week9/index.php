@@ -46,10 +46,10 @@
                     <i class="fa-solid fa-hand-fist"></i> 
                         <span>Join Alliance</span> 
                     </a>
-                    <!-- <a href="" target="_blank" class="secondary-cta" id="button">
-                        <i class="fa-solid fa-hand-fist"></i>
-                        <span>Login</span> 
-                    </a> -->
+                    <a href="allies.php" class="secondary-cta" id="button">
+                    <i class="fa-solid fa-people-group"></i>
+                        <span>View Alliance</span> 
+                    </a>
                 </div>
             </div>
             <div class="right-col">
