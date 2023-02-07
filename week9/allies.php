@@ -52,7 +52,7 @@
         die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT id, firstname, lastname FROM MyAllies";
+        $sql = "SELECT id, firstname, lastname FROM mnturingan_myallies";
         $result = $conn->query($sql);
 
         echo "<h1>My Allies</h1>";
