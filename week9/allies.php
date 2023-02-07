@@ -61,7 +61,7 @@
         while($row = $result->fetch_assoc()) {
             
             echo "<br>";
-            echo "id: " . $row["id"]. " - " . $row["firstname"]. " " . $row["lastname"]. " " . $row["email"]. "<br>";
+            echo "id: " . $row["id"]. " - " . $row["firstname"]. " " . $row["lastname"]. " email: " . $row["email"]. "<br>";
         }
         } else {
         echo "0 results";
