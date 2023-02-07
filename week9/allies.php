@@ -52,7 +52,7 @@
         die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT id, firstname, lastname FROM mnturingan_myallies";
+        $sql = "SELECT id, firstname, lastname, email FROM mnturingan_myallies";
         $result = $conn->query($sql);
 
         echo "<h1>My Allies</h1>";
@@ -61,7 +61,7 @@
         while($row = $result->fetch_assoc()) {
             
             echo "<br>";
-            echo "id: " . $row["id"]. " - " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+            echo "id: " . $row["id"]. " - " . $row["firstname"]. " " . $row["lastname"]. " " . $row["email"]. "<br>";
         }
         } else {
         echo "0 results";
