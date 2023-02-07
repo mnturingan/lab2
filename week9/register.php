@@ -153,9 +153,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
 
 	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "testdb";
+	$username = "webprogmi212";
+	$password = "webprogmi212";
+	$dbname = "webprogmi212";
 	
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -164,7 +164,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "INSERT INTO MyAllies (firstname, lastname, email)
+	$sql = "INSERT INTO mnturingan_myallies (firstname, lastname, email)
 	VALUES ('$name', '$lastname', '$email')";
 	
 	if ($conn->query($sql) === TRUE) {

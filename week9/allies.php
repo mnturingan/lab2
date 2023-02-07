@@ -38,12 +38,12 @@
             
       <main>
 
-      <!-- select data mysql testdb -->
+      <!-- select data mysql webprogmi212 -->
             <?php
         $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "testdb";
+        $username = "webprogmi212";
+        $password = "webprogmi212";
+        $dbname = "webprogmi212";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
